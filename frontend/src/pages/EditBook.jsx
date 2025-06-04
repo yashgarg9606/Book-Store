@@ -16,7 +16,7 @@ const EditBook = () => {
   const {id}=useParams()
   useEffect(() => {
     setLoading(true);
-    axios.get(`http://localhost:5554/books/${id}`)
+    axios.get(`https://mern-stack-project-bnty.onrender.com/books/${id}`)
     .then((response)=>{
       setTitle(response.data.title);
       setAuthor(response.data.author);
